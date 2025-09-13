@@ -4,7 +4,7 @@
 
 nav{
     padding: 10px;
-    background: #ccc
+    background: #c3f4fe
 }
 
 nav a{
@@ -13,9 +13,20 @@ nav a{
     display: block;
 }
 
+h1{
+    color: #300;
+}
+
 
 main{
     max-width: 840px;
+    background-color: #c3f4fe;
+    text-align: center;
+}
+
+main img{
+    width: 200px;
+    height: auto;
 }
 
 aside{
