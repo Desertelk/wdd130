@@ -2,6 +2,18 @@
 
 }
 
+nav{
+    padding: 10px;
+    background: #ccc
+}
+
+nav a{
+    color: darkblue;
+    padding: 10px;
+    display: block;
+}
+
+
 main{
     max-width: 840px;
 }
