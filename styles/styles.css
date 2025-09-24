@@ -4,19 +4,32 @@
     box-sizing: border-box;
 }
 
+header, footer, .grid{
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav{
-    padding: 10px;
-    background-color: #c3f4fe
+    padding: 1rem;
+    background-color: #c3f4fe;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a{
-    color: darkblue;
     padding: 10px;
     display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: darkblue;
 }
 
 h1{
     color: #300;
+    border-bottom: solid 3px darkblue;
+    margin: 10px;
 }
 
 
@@ -32,7 +45,7 @@ main img{
     border: 1px solid darkblue;
     padding: 1px;
     box-shadow: 3px 5px 10px darkblue;
-    float: right
+    float: right;
 }
 
 aside{
@@ -64,12 +77,6 @@ p {
     text-align: center;
 }
 
-footer{
-    margin-top: 1em;
-    border-top: 1px solid #000;
-    text-align: center;
-}
-
 /* Class Selectors */
 
 .box{
@@ -80,3 +87,18 @@ footer{
     color: #333;
 }
 
+.grid{
+    display: grid;
+    align-items: center;
+}
+    main{
+        grid-column: 2/3;
+        margin: 1rem;
+    }
+
+    aside{
+        width: 20rem;
+        position: relative;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
