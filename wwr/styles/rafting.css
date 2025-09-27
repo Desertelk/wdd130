@@ -23,8 +23,24 @@ header, main, footer {
     margin: 0 auto;
 }
 
+header {
+    margin-left: 1rem auto;
+    display: grid;
+    grid-template-columns: 230px 5fr 5fr;
+    align-items: center;
+    border-bottom: 1px solid darkblue;
+    max-width: 1000px;
+}
+
+header nav {
+    display: flex;
+    list-style: none;
+
+}
+
 header a {
-    margin: 10px;
+    margin-left: 10px;
+    text-decoration: none;
 }
 
 h1, h2 {
@@ -35,6 +51,10 @@ h1, h2 {
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+}
+
+section {
+    
 }
 
 .socialmedia a {
