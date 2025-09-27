@@ -24,7 +24,7 @@ header, main, footer {
 }
 
 header {
-    margin-left: 1rem auto;
+    margin: 1rem auto;
     display: grid;
     grid-template-columns: 230px 5fr 5fr;
     align-items: center;
