@@ -19,7 +19,8 @@ body {
 }
 
 header, main, footer {
-    width: 1500px;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -53,12 +54,17 @@ nav, p, section, article {
     padding: 8px;
 }
 
-section{
+.adventure {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
     gap: 20px;
+    align-items: flex-start;
+    text-align: center;
+    gap: 20px;
+}
+
+section{
     padding: 20px;
 } 
 
@@ -96,10 +102,6 @@ section h2{
     text-decoration: none;
 }
 
-.hero {
-    position: relative;
-}
-
 .hero img {
     display: block;
     width: 90%;
@@ -108,7 +110,7 @@ section h2{
 }
 
 h1 {
-    position: absolute;
+    position: static;
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -122,17 +124,190 @@ article {
     position: relative;
 }
 
-.hero article img {
-    float: right;
-    width: 200px;
+.contact-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 6rem auto;
+    max-width: 1000px;
+}
+
+.contact-form {
+  flex: 1 1 400px;
+  max-width: 400px;
+  font-family: Arial, sans-serif;
+}
+
+iframe {
+    flex: 1 1 400px;
+    max-width: 400px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  width: 140px;
+  font-weight: bold;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row textarea {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+
+
+.checkbox-row {
+  align-items: center;
+  gap: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  background-color: #ddd;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
     height: auto;
-    border: 1px solid var(--primary-color);
-    box-shadow: 0px 2px 10px var(--accent2-color);
-    margin: 10px;
+    background-color: #005187;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; 
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+article img {
+  width: 170px;   /* Try 200–300px depending on what looks right */
+  height: auto;
+  display: block; 
+  border-radius: 8px; /* optional */
+  float: right;
 }
 
 .socialmedia img {
     height: 50px;
     width: auto;
     margin: 10px;
+}
+
+.purpose label {
+    display: block;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.purpose {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.purpose .message {
+    font-weight: bold;
+    min-width: 180px;
+}
+
+.purpose .options {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.purpose .options label{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.support-team {
+    text-align: center;
+    margin: 3rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    max-width: 1000px;
+    background-color: #f5f7fb;
+}
+
+.support-team h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #2a5da3;
+    text-transform: capitalize;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    border: 1px solid #aaa;
+    padding: 1rem;
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba (0,0,0, 0.1);
+}
+
+.team-member img {
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    border: 3px solid #2a5da3;
+}
+
+.team-member p{
+    font-weight: bold;
+    margin: 0;
 }
