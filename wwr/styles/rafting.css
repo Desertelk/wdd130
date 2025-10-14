@@ -374,7 +374,53 @@ article img {
     color: var(--primary-color);
     font-size: 2rem;
 }
+
 .highlights p {
     color: var(--accent1-color);
     font-size: 1.5rem;
+}
+
+.trip-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.trip {
+    display: flex;
+    flex: 1 1 300px;
+    background-color: #f5f7fb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 480px;
+}
+
+.trip img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+
+.trip-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.trip-table {
+    text-align: center;
+    margin: 3rem auto;
+    max-width: 1000px;
+}
+
+.trip-table table {
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.1);
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
 }
